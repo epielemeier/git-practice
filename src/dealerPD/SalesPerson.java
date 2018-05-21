@@ -43,7 +43,11 @@ public class SalesPerson {
     if (getCars().size() == 0) return true; else return false;
   }
   
+  public String getPositionUppercase() {
+	  return getPosition().toUpperCase();
+  }
+  
   public String toString() {
-    return getPosition() + " " + getName();
+    return getPositionUppercase() + " " + getName();
   }
 }
